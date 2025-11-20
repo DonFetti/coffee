@@ -1,0 +1,104 @@
+body {
+    background: #1a1a1a;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2d2d2d;
+}
+
+.card-header {
+    border-radius: 0 !important;
+    padding: 1.5rem;
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040;
+}
+
+.card-body {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.form-control {
+    background-color: #1a1a1a;
+    border: 1px solid #404040;
+    color: #e0e0e0;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: #667eea;
+    color: #e0e0e0;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-label {
+    color: #e0e0e0;
+}
+
+.form-text {
+    color: #999 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+}
+
+.card.bg-light {
+    background-color: #1a1a1a !important;
+    border: 2px solid #404040;
+    transition: all 0.3s;
+}
+
+.card.bg-light:hover {
+    border-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    border-color: #404040;
+    opacity: 1;
+}
+
+h5, h6 {
+    color: #e0e0e0;
+}
+
+.alert-info {
+    background-color: #1a1a1a;
+    border: 1px solid #404040;
+    color: #e0e0e0;
+}
+
+#results {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
