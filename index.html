@@ -31,6 +31,18 @@
                                        placeholder="Enter amount in ml (e.g., 300)" value="300" step="1" min="1" required>
                                 <small class="form-text text-muted">Total coffee amount you want to brew</small>
                             </div>
+
+                            <fieldset class="mb-4">
+                                <legend class="form-label fw-bold fs-6">Iced coffee?</legend>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="coffeeStyle" id="notIced" value="not-iced" checked>
+                                    <label class="form-check-label" for="notIced">Nah</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="coffeeStyle" id="iced" value="iced">
+                                    <label class="form-check-label" for="iced">Iced</label>
+                                </div>
+                            </fieldset>
                             
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg">
@@ -48,6 +60,22 @@
                                         <div class="card-body text-center">
                                             <h6 class="card-subtitle mb-2" style="color: #999;">Beans Needed</h6>
                                             <h3 class="card-title text-primary" id="beansResult">0g</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-none" id="iceResultCard">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-subtitle mb-2" style="color: #999;">Ice Needed</h6>
+                                            <h3 class="card-title text-info" id="iceResult">0ml</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-none" id="hotWaterResultCard">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-subtitle mb-2" style="color: #999;">Hot Water Needed</h6>
+                                            <h3 class="card-title text-warning" id="hotWaterResult">0ml</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -75,4 +103,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
